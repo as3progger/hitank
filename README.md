@@ -18,7 +18,7 @@
 
 <p align="center">
   <a href="#rocket-quick-start">Quick Start</a> &nbsp;&bull;&nbsp;
-  <a href="#package-available-skills">Available Skills</a> &nbsp;&bull;&nbsp;
+  <a href="#package-skills-catalog">Skills Catalog</a> &nbsp;&bull;&nbsp;
   <a href="#wrench-installation">Installation</a> &nbsp;&bull;&nbsp;
   <a href="#diamond_shape_with_a_dot_inside-why-ruby">Why Ruby</a> &nbsp;&bull;&nbsp;
   <a href="#gear-how-it-works">How It Works</a>
@@ -42,17 +42,26 @@ hitank add honeybadger --local     # Install for current project only
 hitank del google-sheets           # Remove a skill
 ```
 
-## :package: Available Skills
+## :package: Skills Catalog
 
-| Category | Skill | Description |
-|----------|-------|-------------|
-| Office | google-sheets | Read and write Google Sheets via REST API |
-| Monitoring | honeybadger | Monitor errors, uptime and deployments on Honeybadger |
-| Platform | heroku | Manage Heroku apps, dynos, config and deployments via Platform API |
-| Project Management | clickup | Manage ClickUp tasks, lists, spaces, time tracking and comments |
-| Communication | discord | Manage Discord servers, channels, messages and members via Bot API |
-| Project Management | jira | Manage Jira issues, projects, sprints and boards via REST API |
-| CRM | hubspot | Manage HubSpot contacts, companies, deals and pipelines via CRM API |
+### :briefcase: Project Management
+- **[clickup](skills/clickup)** — Manage ClickUp workspaces, spaces, lists, tasks, comments and time tracking. Search tasks, create/update/delete with filters and pagination. Supports bulk operations and task hierarchy navigation.
+- **[jira](skills/jira)** — Manage Jira Cloud issues, projects, sprints and boards. Search with JQL, create/update issues, transition statuses, assign, comment. Supports Agile boards and sprint management.
+
+### :bar_chart: CRM & Sales
+- **[hubspot](skills/hubspot)** — Manage HubSpot CRM contacts, companies, deals and pipelines. Search across objects, create/update records, list owners and notes. Cursor-based pagination for large datasets.
+
+### :cloud: Platform & Infrastructure
+- **[heroku](skills/heroku)** — Manage Heroku apps, dynos, config vars, releases, add-ons, domains and formation. View logs, restart dynos, scale processes. Full Platform API coverage.
+
+### :speech_balloon: Communication
+- **[discord](skills/discord)** — Manage Discord servers, channels and messages via Bot API. Send/edit/delete messages, react, pin, create threads, list members and roles.
+
+### :chart_with_upwards_trend: Monitoring
+- **[honeybadger](skills/honeybadger)** — Monitor errors, uptime and deployments on Honeybadger. List projects, browse faults with filters, view fault details, resolve issues, track deploys and check uptime sites.
+
+### :page_facing_up: Office & Productivity
+- **[google-sheets](skills/google-sheets)** — Read and write Google Sheets via REST API. List tabs, read ranges, write data and append rows. Supports RAW and USER_ENTERED input modes for formulas and dates.
 
 ## :wrench: Installation
 
