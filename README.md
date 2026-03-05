@@ -52,6 +52,7 @@ hitank del google-sheets           # Remove a skill
 | Project Management | clickup | Manage ClickUp tasks, lists, spaces, time tracking and comments |
 | Communication | discord | Manage Discord servers, channels, messages and members via Bot API |
 | Project Management | jira | Manage Jira issues, projects, sprints and boards via REST API |
+| CRM | hubspot | Manage HubSpot contacts, companies, deals and pipelines via CRM API |
 
 ## :wrench: Installation
 
