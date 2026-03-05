@@ -22,6 +22,7 @@
 | Office | google-sheets | Read and write Google Sheets via REST API |
 | Monitoring | honeybadger | Monitor errors, uptime and deployments on Honeybadger |
 | Platform | heroku | Manage Heroku apps, dynos, config and deployments via Platform API |
+| Project Management | clickup | Manage ClickUp tasks, lists, spaces, time tracking and comments |
 
 ## Installation
 
