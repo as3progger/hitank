@@ -2,7 +2,6 @@
 
 <div align="center">
   <img src="assets/pilot-program.gif" alt="I need a pilot program for a B-212 helicopter" />
-  <p><em>I need a pilot program for a B-212 helicopter.</em></p>
 </div>
 
 Claude Code skills in pure Ruby. No dependencies, fewer tokens, just stdlib.
