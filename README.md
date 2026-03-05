@@ -2,7 +2,6 @@
 
 # HiTank — Your skill operator for Claude Code
   <img src="assets/pilot-program.gif" alt="I need a pilot program for a B-212 helicopter" width="1280" />
-  <p>Claude Code skills in pure Ruby. No dependencies and fewer tokens.</p>
   <br />
   <a href="https://twitter.com/alanalvestech">
     <img src="https://img.shields.io/badge/Follow on X-000000?style=for-the-badge&logo=x&logoColor=white" alt="Follow on X" />
