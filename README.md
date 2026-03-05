@@ -1,11 +1,19 @@
-# hitank
-
 <div align="center">
+
+# hitank — Your skill operator for Claude Code
   <img src="assets/pilot-program.gif" alt="I need a pilot program for a B-212 helicopter" width="1280" />
   <p>Claude Code skills in pure Ruby. No dependencies and fewer tokens.</p>
+  <br />
+  <a href="https://twitter.com/alanalvestech">
+    <img src="https://img.shields.io/badge/Follow on X-000000?style=for-the-badge&logo=x&logoColor=white" alt="Follow on X" />
+  </a>
+  <a href="https://www.linkedin.com/in/alanalvestech/">
+    <img src="https://img.shields.io/badge/Follow on LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="Follow on LinkedIn" />
+  </a>
+  <a href="LICENSE">
+    <img src="https://img.shields.io/badge/LICENSE-MIT-2ea44f?style=for-the-badge" alt="MIT License" />
+  </a>
 </div>
-
-Claude Code skills in pure Ruby. No dependencies, fewer tokens, just stdlib.
 
 ## Available Skills
 
@@ -101,24 +109,9 @@ Skills are stored in this repository under `skills/`. The `hitank` gem is a thin
 
 The skills themselves use **zero gems** — pure Ruby stdlib. The gem is just the installer.
 
-## Creating a Skill
+## Star History
 
-Each skill follows this structure:
-
-```
-skills/
-└── your-skill/
-    ├── SKILL.md           # Instructions for Claude
-    └── scripts/
-        └── your_script.rb # Ruby scripts (stdlib only)
-```
-
-### Conventions
-
-- **Ruby stdlib only** — no gems, no Gemfile, no bundler
-- **Scripts are self-contained** — each script does one thing
-- **SKILL.md is the interface** — Claude reads this to know how to use your skill
-- **Paths use `~/.claude/skills/`** — scripts reference their installed location
+[![Star History Chart](https://api.star-history.com/svg?repos=alanalvestech/hitank&type=Date)](https://star-history.com/#alanalvestech/hitank&Date)
 
 ## License
 
