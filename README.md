@@ -1,7 +1,8 @@
 # hitank
 
 <div align="center">
-  <img src="assets/pilot-program.gif" alt="I need a pilot program for a B-212 helicopter" />
+  <img src="assets/pilot-program.gif" alt="I need a pilot program for a B-212 helicopter" width="1280" />
+  <p>Claude Code skills in pure Ruby. No dependencies and fewer tokens.</p>
 </div>
 
 Claude Code skills in pure Ruby. No dependencies, fewer tokens, just stdlib.
