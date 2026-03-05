@@ -15,7 +15,35 @@
   </a>
 </div>
 
-## Available Skills
+<br />
+
+<p align="center">
+  <a href="#-quick-start">Quick Start</a> &nbsp;&bull;&nbsp;
+  <a href="#-available-skills">Available Skills</a> &nbsp;&bull;&nbsp;
+  <a href="#-installation">Installation</a> &nbsp;&bull;&nbsp;
+  <a href="#-why-ruby">Why Ruby</a> &nbsp;&bull;&nbsp;
+  <a href="#-how-it-works">How It Works</a>
+</p>
+
+---
+
+## :rocket: Quick Start
+
+```bash
+gem install hitank          # Install the CLI
+hitank add google-sheets    # Add a skill (global)
+```
+
+Then use `/google-sheets` directly in Claude Code. That's it.
+
+```bash
+# More commands
+hitank list                        # List available skills
+hitank add honeybadger --local     # Install for current project only
+hitank del google-sheets           # Remove a skill
+```
+
+## :package: Available Skills
 
 | Category | Skill | Description |
 |----------|-------|-------------|
@@ -24,7 +52,7 @@
 | Platform | heroku | Manage Heroku apps, dynos, config and deployments via Platform API |
 | Project Management | clickup | Manage ClickUp tasks, lists, spaces, time tracking and comments |
 
-## Installation
+## :wrench: Installation
 
 ### 1. Check if you have Ruby
 
@@ -68,25 +96,7 @@ gem install hitank
 
 That's it. No other dependencies needed.
 
-## Usage
-
-```bash
-# List available skills
-hitank list
-
-# Install a skill (global — works in all projects)
-hitank add google-sheets
-
-# Install for current project only
-hitank add google-sheets --local
-
-# Remove a skill
-hitank del google-sheets
-```
-
-After installing, use `/google-sheets` (or any skill name) directly in Claude Code.
-
-## Why Ruby
+## :diamond_shape_with_a_dot_inside: Why Ruby
 
 Ruby's stdlib is surprisingly powerful. `net/http`, `openssl`, `json`, `base64` — everything you need to talk to REST APIs is already there. No gem install, no bundler, no dependency hell.
 
@@ -106,7 +116,7 @@ For a skill that reads/writes a REST API with auth (like Google Sheets):
 
 ✱ Measured from the Google Sheets skill. Other values are estimates based on minimum setup each stack requires.
 
-## How It Works
+## :gear: How It Works
 
 Skills are stored in this repository under `skills/`. The `hitank` gem is a thin CLI that fetches individual skills from GitHub and installs them to `~/.claude/skills/` (or `.claude/skills/` with `--local`).
 
