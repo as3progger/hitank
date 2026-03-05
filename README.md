@@ -1,6 +1,6 @@
 <div align="center">
 
-# hitank — Your skill operator for Claude Code
+# HiTank — Your skill operator for Claude Code
   <img src="assets/pilot-program.gif" alt="I need a pilot program for a B-212 helicopter" width="1280" />
   <p>Claude Code skills in pure Ruby. No dependencies and fewer tokens.</p>
   <br />
@@ -20,6 +20,7 @@
 | Category | Skill | Description |
 |----------|-------|-------------|
 | Office | google-sheets | Read and write Google Sheets via REST API |
+| Monitoring | honeybadger | Monitor errors, uptime and deployments on Honeybadger |
 
 ## Installation
 
