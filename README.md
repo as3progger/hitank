@@ -48,13 +48,16 @@ hitank del google-sheets           # Remove a skill
 - **[clickup](skills/clickup)** — Manage ClickUp workspaces, spaces, lists, tasks, comments and time tracking. Search tasks, create/update/delete with filters and pagination. Supports bulk operations and task hierarchy navigation.
 - **[jira](skills/jira)** — Manage Jira Cloud issues, projects, sprints and boards. Search with JQL, create/update issues, transition statuses, assign, comment. Supports Agile boards and sprint management.
 - **[linear](skills/linear)** — Manage Linear issues, projects, teams, cycles and labels via GraphQL API. Create/update issues, search, comment. Supports team filtering and cycle management.
+- **[trello](skills/trello)** — Manage Trello boards, lists, cards, checklists, labels and members via REST API. Create/move/update cards, search, comment, manage checklists. Supports labels, due dates and member assignment.
 
 ### :bar_chart: CRM & Sales
 - **[hubspot](skills/hubspot)** — Manage HubSpot CRM contacts, companies, deals and pipelines. Search across objects, create/update records, list owners and notes. Cursor-based pagination for large datasets.
 
 ### :cloud: Platform & Infrastructure
+- **[flyio](skills/flyio)** — Manage Fly.io apps, machines, volumes and certificates via Machines API. Create/start/stop/delete machines, manage volumes with snapshots, request ACME certificates. Supports regions, scaling and health checks.
 - **[heroku](skills/heroku)** — Manage Heroku apps, dynos, config vars, releases, add-ons, domains and formation. View logs, restart dynos, scale processes. Full Platform API coverage.
 - **[hostinger](skills/hostinger)** — Manage Hostinger domains, DNS records, hosting websites, subscriptions and VPS. Check domain availability, update nameservers, manage DNS snapshots and WHOIS privacy.
+- **[railway](skills/railway)** — Manage Railway projects, services, deployments, variables, domains and volumes via GraphQL API. Deploy, rollback, view logs, manage environments. Supports GitHub repos, Docker images and custom domains.
 
 ### :speech_balloon: Communication
 - **[discord](skills/discord)** — Manage Discord servers, channels and messages via Bot API. Send/edit/delete messages, react, pin, create threads, list members and roles.
@@ -84,6 +87,7 @@ hitank add abacatepay    # Payments — PIX, customers, coupons
 hitank add appsignal     # Monitoring — graphs, markers, samples
 hitank add clickup       # Project management — tasks, comments, time tracking
 hitank add discord       # Communication — messages, channels, threads
+hitank add flyio         # Infrastructure — machines, volumes, certificates
 hitank add google-sheets # Office — read/write spreadsheets
 hitank add heroku        # Infrastructure — apps, dynos, config vars
 hitank add honeybadger   # Monitoring — errors, uptime, deploys
@@ -92,11 +96,13 @@ hitank add hubspot       # CRM — contacts, companies, deals
 hitank add jira          # Project management — issues, sprints, boards
 hitank add linear        # Project management — issues, cycles, teams
 hitank add notion        # Office — pages, databases, blocks
+hitank add railway       # Infrastructure — projects, services, deployments
 hitank add resend        # Communication — transactional emails, domains
 hitank add rewrite       # Communication — SMS, templates, webhooks
 hitank add shopify       # E-commerce — products, orders, inventory
 hitank add slack         # Communication — messages, files, reactions
 hitank add stripe        # Payments — charges, subscriptions, invoices
+hitank add trello        # Project management — boards, lists, cards
 ```
 
 ## :wrench: Installation
